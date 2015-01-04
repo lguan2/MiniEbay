@@ -1,3 +1,4 @@
+package test;
 
 public class Item {
 	private String name;
@@ -34,5 +35,11 @@ public class Item {
 			}
 		}
 		return false;
-	}	
+	}
+	
+	public Item(String name, double price, String id) {
+		this.name = name;
+		this.price = price;
+		this.id = id;
+	}
 }

@@ -1,3 +1,4 @@
+package test;
 
 public class User {
 	private String userName;
@@ -19,6 +20,13 @@ public class User {
 	}
 	public Cart getCart() {
 		return myCart;
+	}
+	
+	public User(String userName, String userPassword, double balance) {
+		this.userName = userName;
+		this.userPassword = userPassword;
+		this.balance = balance;
+		this.myCart = new Cart();
 	}
 
 }
